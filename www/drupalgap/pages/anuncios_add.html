@@ -1,0 +1,80 @@
+<div data-role="page" id="drupalgap_page_anuncios_add">
+    <div data-role="header">
+        <a href="#" data-icon="back" class="ui-btn-left btnBack">Atrás</a>
+        <h1>Crear anuncio</h1>
+    </div><!-- /header -->
+    <div data-role="content">
+        <div class="content-primary">
+            <form id="drupalgap_page_anuncios_add_form" >
+                <div data-role="fieldcontain">
+                    <label for="titulo"><b>Título:</b></label>
+                    <input type="text" name="titulo" id="titulo" value=""  />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="precio"><b>Precio:</b></label>
+                    <input type="number" name="precio" id="precio" value="0"  style="width:100px !important;"/>
+                    <!--<label>&nbsp; &euro;</label>-->
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea cols="40" rows="8" name="descripcion" id="descripcion"></textarea>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="tipo" class="select"><b>Tipo:</b></label>
+                    <select name="tipo" id="tipo" data-native-menu="false">
+                        <option value="1">Comprar</option>
+                        <option value="2">Vender</option>                        
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="seccion" class="select"><b>Sección:</b></label>
+                    <select name="seccion" id="seccion" data-native-menu="false">
+
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="categoria" class="select"><b>Categoría:</b></label>
+                    <select name="categoria" id="categoria" data-native-menu="false">
+
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="provincia" class="select"><b>Provincia:</b></label>
+                    <select name="provincia" id="provincia" data-native-menu="false">
+
+                    </select>
+                </div>
+
+                <div class="imagenes">
+
+                </div>
+                <fieldset>
+                    <legend>Nuevas im&aacute;genes</legend>
+                    <div id="imagenes_selectors_set">
+                    <div class="imagenes_select">
+                        <img src="#" id="imgAdd1" style="width: 50px;height: 50px;"/>
+                         <input type="button" id="btnAdd1" data-mini="true" class="image_select" data-inline="true" value="Seleccionar" data-icon="picture" data-theme="b" />
+                        <a href="#" id="lnkEliminar1" class="btnEliminarImagenSelect">Elminar</a>
+                    </div>
+                    </div>
+                    <div class="imagenes_add">
+                        <div data-role="button" class="image_add_select" data-theme="d" data-icon="plus">Más imágenes</div>
+                    </div>
+                </fieldset>
+
+            </form>
+
+
+        </div>
+    </div><!-- /content -->
+    <div id="form_action_buttons" style="text-align: right; display: none">
+        <div data-role="button" id="btnFormCancelar" data-inline="true" data-theme="b" data-icon="delete" class="btnBack">Cancelar</div>
+        <div data-role="button" id="btnFormAceptar" data-inline="true" data-theme="b" data-icon="check">Aceptar</div>
+    </div>
+</div><!-- /page -->

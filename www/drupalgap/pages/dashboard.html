@@ -1,0 +1,55 @@
+<div data-role="page" id="drupalgap_page_dashboard">
+    <div data-role="header"  data-theme="c">
+        <img src="../../images/logo-merkanuncio.png" class="ui-btn-right" style="height: 100%; width: 35%;"/>
+        <h2 style="padding-left: 10px;text-align: left;margin-left: 0"></h2>
+    </div><!-- /header -->
+    <div data-role="header" data-theme="b" id="drupalgap_page_dashboard_header_user">
+        <a href="user_register.html" data-role="button" id="drupalgap_button_user_register" class="ui-btn-left">Registrar</a>
+        <h2></h2>
+        <a href="user_login.html" data-role="button" id="drupalgap_button_user_login" class="ui-btn-right">Acceder</a>
+        <a href="#" data-role="button" id="drupalgap_button_user_logout" data-icon="off" class="ui-btn-right">Salir</a>
+
+    </div><!-- /header -->
+
+    <div data-role="navbar" id="drupalgap_page_dashboard_navbar_anonymous" data-iconpos="top">
+        <ul>
+            <li><a href="anuncios.html" data-role="button" id="drupalgap_button_ads" data-icon="list-alt">Anuncios</a></li>
+            <li><a href="informacion_anonimo.html" data-role="button" id="drupalgap_button_new_ad" data-icon="plus-sign">Publicar</a></li>
+        </ul>
+    </div>
+    <div data-role="navbar" id="drupalgap_page_dashboard_navbar_authenticated" data-iconpos="top">
+        <ul>
+            <li><a href="anuncios.html" data-role="button" id="drupalgap_button_ads" data-icon="list-alt">Anuncios</a></li>
+            <li><a href="anuncios_add.html" data-role="button" id="drupalgap_button_new_ad" data-icon="plus-sign">Publicar</a></li>
+            <li><a href="user.html" data-role="button" id="drupalgap_button_user_account" data-icon="user">Cuenta</a></li>
+            <!--<li><a href="config.html" data-role="button" id="drupalgap_button_config" data-icon="cog">Config</a></li>
+            <li><a href="#" data-role="button" id="drupalgap_button_user_logout" data-icon="off">Salir</a></li>-->
+        </ul>
+    </div><!-- /navbar -->
+
+    <div class="ui-grid-b" id="destacados_portada">
+        
+    </div><!-- /grid-b -->
+
+    <div data-role="content">
+        <div data-role="collapsible" data-collapsed="true" data-theme="c">
+            <h3>&Uacute;ltimos publicados</h3>
+            <ul data-role="listview" data-theme="c" data-inset="true" id="drupalgap_page_ultimos_anuncios_list"></ul>
+        </div>
+        <div data-role="collapsible" data-collapsed="true" data-theme="c">
+            <h3>M&aacute;s vistos</h3>
+            <ul data-role="listview" data-theme="c" data-inset="true" id="drupalgap_page_mas_vistos_list"></ul>
+        </div>
+
+        <hr />
+
+    </div><!-- /content -->
+
+    <div data-role="content">
+        <a href="search.html" data-role="button" data-icon="search">Buscador</a>
+        <a href="contact.html" data-role="button" data-icon="facheck">Cont&aacute;ctenos</a>
+
+        <hr />
+
+    </div><!-- /content -->
+</div><!-- /page -->

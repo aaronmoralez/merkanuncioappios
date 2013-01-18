@@ -1,0 +1,53 @@
+<div data-role="page" id="drupalgap_page_search">
+    <div data-role="header">
+        <a href="#" data-icon="back" class="ui-btn-left btnBack">Atrás</a>
+        <h1>Buscador</h1>
+    </div><!-- /header -->
+    <div data-role="content">
+        <div class="content-primary">
+            <form id="drupalgap_page_search_form" >
+                <div data-role="fieldcontain">
+                    <label for="contiene">Texto a buscar:</label>
+                    <input type="search" name="contiene" id="contiene" value="" />
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="seccion" class="select">Sección:</label>
+                    <select name="seccion" id="seccion_search" data-native-menu="false">
+
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="categoria" class="select">Categoría:</label>
+                    <select name="categoria" id="categoria_search" data-native-menu="false">
+
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="provincia" class="select">Provincia:</label>
+                    <select name="provincia" id="provincia_search" data-native-menu="false">
+                    </select>
+                </div>
+
+                
+            </form>
+
+
+        </div>
+    </div><!-- /content -->
+    <div id="search_form_action_buttons" style="text-align: right;display: none;">
+        <div data-role="button" id="btnSearchFormCancelar" data-inline="true" data-theme="b" data-icon="delete" class="btnBack">Cancelar</div>
+        <div data-role="button" id="btnSearchFormAceptar" data-inline="true" data-theme="b" data-icon="check">Buscar</div>
+    </div>
+    
+    <div data-role="content">
+        
+        <ul data-role="listview" data-theme="c" data-inset="true" id="drupalgap_page_anuncios_search_list"></ul>
+        
+        <a href="#" data-role="button" id="anuncios-search-ver-mas" data-icon="plus" style="display: none">Ver más</a>
+        
+        
+    </div><!-- /content -->
+</div><!-- /page -->

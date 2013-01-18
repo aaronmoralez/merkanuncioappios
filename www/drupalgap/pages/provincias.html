@@ -1,0 +1,30 @@
+<div data-role="page" id="drupalgap_page_provincias">
+    <div data-role="header">
+        <a href="dashboard.html" data-icon="home" class="ui-btn-left">Inicio</a>
+        <h1>Provincias</h1>
+        <a href="anuncios_add.html" data-icon="plus-sign" class="ui-btn-right" id="drupalgap_page_anuncios_button_add">Nuevo</a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <!--<legend>Layout view:</legend>-->
+                <input type="radio" name="radio-view" id="radio-view-a" value="todos" />
+                <label for="radio-view-a">Todos</label>
+                <input type="radio" name="radio-view" id="radio-view-b" value="provincias" checked="checked"  />
+                <label for="radio-view-b">Provincias</label>
+                <input type="radio" name="radio-view" id="radio-view-c" value="categorias"  />
+                <label for="radio-view-c">Categorías</label>
+            </fieldset>
+        </div>
+
+        <!--<ul data-role="listview" data-theme="a" data-inset="true" id="drupalgap_page_anuncios_list"></ul>-->
+        
+        <ul data-role="listview" data-theme="a" data-inset="true" id="drupalgap_page_provincias_list">
+            
+        </ul>
+        <a href="#" data-role="button" id="provincias-ver-mas" data-icon="plus" style="display: none">Ver más</a>
+        
+        <!--<ul data-role="listview" data-theme="a" data-inset="true" id="drupalgap_page_categorias_list"></ul>-->
+    </div><!-- /content -->
+</div><!-- /page -->

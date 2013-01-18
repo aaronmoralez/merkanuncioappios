@@ -1,0 +1,41 @@
+<div data-role="page" id="drupalgap_page_contact">
+    <div data-role="header">
+        <a href="#" data-icon="back" class="ui-btn-left btnBack">Atrás</a>
+        <h1>Contacto</h1>
+    </div><!-- /header -->
+    <div data-role="content">
+        <div class="content-primary">
+            <form id="drupalgap_page_contact_form" >
+                <div data-role="fieldcontain">
+                    <label for="nombre"><b>Nombre:</b></label>
+                    <input type="text" name="nombre" id="nombre" value=""  />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="correo"><b>Correo:</b></label>
+                    <input type="text" name="correo" id="correo" value=""/>
+                    <!--<label>&nbsp; &euro;</label>-->
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="asunto"><b>Asunto:</b></label>
+                    <input type="text" name="asunto" id="asunto" value=""/>
+                    <!--<label>&nbsp; &euro;</label>-->
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="comentario">Comentario:</label>
+                    <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div><!-- /content -->
+    <div id="contact_form_action_buttons" style="text-align: right;">
+        <div data-role="button" id="btnContactFormCancelar" data-inline="true" data-theme="b" data-icon="delete" class="btnBack">Cancelar</div>
+        <div data-role="button" id="btnContactFormAceptar" data-inline="true" data-theme="b" data-icon="check">Aceptar</div>
+    </div>
+</div><!-- /page -->

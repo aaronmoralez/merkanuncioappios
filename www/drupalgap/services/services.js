@@ -161,7 +161,8 @@ var drupalgap_services = {
 					      },
 					      success: function (data) {
 					    	  result = data;
-					      }
+					      },
+                                             // timeout: 3000
 				    });
 				    
 				    // Print service resource call debug info to console.
@@ -207,6 +208,7 @@ var drupalgap_services = {
 				      async: options.async,
 				      error: options.error,
 				      success: options.success
+                                      //timeout: 3000
 				    };
 					
 					// If error/success call back hooks were provided, chain them

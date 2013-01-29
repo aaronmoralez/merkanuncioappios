@@ -87,7 +87,7 @@ $('.image_select').live('click',function(){
     }
 
     function onFail(message) {
-        alert('Failed because: ' + message);
+        //alert('Failed because: ' + message);
     }
 
 });
@@ -176,7 +176,7 @@ function anuncios_create_success(content){
     if(content.success == true){
         
                 
-        alert("Anuncio guardado satisfactoriamente");
+        //alert("Anuncio guardado satisfactoriamente");
         
         $.mobile.changePage('anuncios.html');
     }

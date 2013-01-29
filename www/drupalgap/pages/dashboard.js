@@ -112,6 +112,12 @@ $('.btnBack').live("click",function(){
     history.back();
 });
 
+$('#destacados_portada a').live("click",function(){
+    drupalgap_page_anuncio_detalles_aid = $(this).attr('id');
+});
+
+
+
 function load_ultimos_anuncios_list(){
     
    
@@ -244,13 +250,14 @@ function destacados_portada_success(content){
     
         $.each(content.data,function(index,val){
             var img_path = val.NImagenAnuncio[0] ?  drupalgap_settings.site_path + "/sites/default/files/images/thumbs/"+val.NImagenAnuncio[0].nombre : drupalgap_settings.site_path + "/sites/default/files/images/nophoto.png";
-            
-            var string_html = '<div class="ui-block-'+leters[index]+'">'+
-            '<div class="ui-bar ui-bar-e" style="height:75px;margin: 5px;">'+
-            '<div style="float: left;width:41%; height:60px;"><img src="'+img_path+'" style="width:100%;height:100%;"/></div>'+
-            '<div style="float: left;width: 56%;font-size: 14px;">'+val.titulo+'</div>'+
+            var string_titulo = val.titulo.length > val.titulo.substring(0,25).length ? val.titulo.substring(0,25) + "..." : val.titulo;
+            var string_html = '<a href="anuncio_detalles.html" style="text-decoration: none !important;" id="'+val.id+'"><div class="ui-block-'+leters[index]+'">'+
+            '<div class="ui-bar ui-bar-e" style="height:75px;margin: 5px;padding:0.4em 3px;">'+
+            '<div style="float: left;width:41%; height:60px;margin-right:3px;"><img src="'+img_path+'" style="width:100%;height:100%;"/></div>'+
+            '<div style="float: left;width: 56%;font-size: 14px;word-wrap: break-word;"><b>'+string_titulo+'</b></div>'+
             '</div>'+            
-            '</div>';
+            '</div>'+
+            '</a>';
     
             $("#destacados_portada").append(string_html);
         });
@@ -258,10 +265,11 @@ function destacados_portada_success(content){
     
     if ($(content.data).length < 3) {
         for(var i = $(content.data).length; i < 3;i++){
+            
             var string_html = '<div class="ui-block-'+leters[i]+'">'+
             '<div class="ui-bar ui-bar-e" style="height:75px;margin: 5px;padding:0.4em 3px;">'+
-            '<div style="float: left;width:41%; height:60px;margin-right:3px;"><img src="'+drupalgap_settings.site_path + "/sites/default/files/images/nophoto.png"+'" style="width:90%;height:90%;"/></div>'+
-            '<div style="float: left;width: 56%;font-size: 14px;">Destaque sus anuncios en portada</div>'+
+            '<div style="float: left;width:41%; height:60px;margin-right:3px;"><img src="../../images/nophoto.png" style="width:90%;height:90%;"/></div>'+
+            '<div style="float: left;width: 56%;font-size: 14px;word-wrap: break-word;"><b>Destaque sus anuncios aqu&iacute;</b></div>'+
             '</div>'+
             '</div>';
     

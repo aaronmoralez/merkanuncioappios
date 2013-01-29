@@ -9,7 +9,7 @@ $('#drupalgap_page_anuncio').live('pageshow',function(){
         }
         else
         {
-            alert("El id del anuncio no es válido");
+            //alert("El id del anuncio no es válido");
             return;
         }
     //        var query = $(this).data("url").split("?")[1];
@@ -57,10 +57,10 @@ function eliminar_anuncio_error(){
     
 }
 function eliminar_anuncio_success(content){
-    if(content.success == true)
-        alert("Anuncio eliminado satisfactoriamente");
-    else
-        alert("En estos momentos no podemos atender su petición. Inténtelo más tarde");
+//    if(content.success == true)
+//        alert("Anuncio eliminado satisfactoriamente");
+//    else
+//        alert("En estos momentos no podemos atender su petición. Inténtelo más tarde");
     
     $.mobile.changePage("anuncios.html");
 }

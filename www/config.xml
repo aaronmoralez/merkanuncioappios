@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.merkanuncio.app"
+        id        = "57269RKV67.com.merkanuncio.app"
         version   = "2.0.0">
-    <name>Merkanuncio app</name>
+    <name>Merkanuncio app iOS</name>
 
     <description>
         Versión móvil de la web de anuncios clasificados Merkanuncio

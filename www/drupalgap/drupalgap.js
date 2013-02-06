@@ -61,17 +61,10 @@ function drupalgap_settings_load () {
     if (!drupalgap_settings) { // no settings found in local storage, setup defaults...
         drupalgap_settings = {};
         //drupalgap_settings.site_path = "http://localhost/mercachina"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
-<<<<<<< HEAD
-        //drupalgap_settings.site_path = "http://localhost/merkanuncio"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
-        //drupalgap_settings.site_path = "http://192.168.2.1/mercachina"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
-        //drupalgap_settings.site_path = "http://192.168.2.1/merkanuncio"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
+
         
         drupalgap_settings.site_path = "http://merkanuncio.com"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
-        //drupalgap_settings.site_path = "http://www.merkamovil.com"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
-=======
-        drupalgap_settings.site_path = "http://192.168.2.1/merkanuncio"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
-        //drupalgap_settings.site_path = "http://merkanuncio.com"; // examples: http://my-drupal-site.com, http://10.0.2.2/my-localhost-drupal
->>>>>>> 16d89cf4d0277a7abd1fbfe37bf90304de786fce
+
         drupalgap_settings.base_path = "/?q=";
         drupalgap_settings.services_endpoint_default = "drupalgap";
         drupalgap_settings.demo = false;
